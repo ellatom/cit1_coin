@@ -7,7 +7,7 @@ async function getData() {
     const instance = axios.create({ baseURL: `https://web3api.io` });
     const options = {
       method: 'GET',
-      headers: { 'x-api-key': 'UAKe9c8b7df965c572d4cafd0cfd316f3d7' }
+      headers: { 'x-api-key': '' }
     };
     const response = await instance.get(`/api/v2/market/spot/ohlcv/eth_usd/latest`, options);
     return response.data.payload;
